@@ -1,0 +1,136 @@
+:root {
+  --colour--primary: #131313;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Typography */
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background: var(--colour--primary);
+  color: white;
+}
+h1 {
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 19px;
+  text-align: center;
+}
+.block_para {
+  font-size: 16px;
+  text-align: center;
+}
+
+.block-bold {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/* icons */
+
+.icons {
+  height: 30px;
+}
+
+.icons--white {
+  color: white;
+}
+.icons_border {
+  padding: 5px 15px;
+  border: 1px solid #424242;
+  margin: 0 10px;
+}
+
+.icons--back {
+  background: #458df5;
+  border: 0;
+}
+
+/* navigation-bar */
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side_icons {
+  display: flex;
+}
+
+.icons--white:hover {
+  color: rgba(255, 255, 255, 0.74);
+}
+.icons--back:hover {
+  background: #458ef5c7;
+}
+.icons_desktop {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .icons_mobile {
+    display: none;
+  }
+  .icons_desktop {
+    display: flex;
+  }
+  .icons--dim {
+    color: rgb(184, 184, 184);
+  }
+  .icons--dim:hover {
+    color: white;
+  }
+  .icon--400 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .fa {
+    font-size: 14px;
+  }
+  .icons--white {
+    padding: 10px 10px;
+  }
+}
+
+/* Center */
+.main_head {
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 25px 0 25px;
+}
+
+.example {
+  margin: 5px 25px;
+  width: 80vw;
+}
+
+/* footer */
+.footer_main {
+  background: #1f1f1f;
+}
