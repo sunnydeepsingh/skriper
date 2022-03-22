@@ -1,111 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e391c23c79.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=PT+Serif:ital@1&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
-    <header >
-        <nav class="nav_bar">
-            <img class="icons" src="images/Logo.png" alt="skriper_logo">
-            <div class="icons_desktop side_icons">
-                <i class="fa-solid fa-fire fa icons--white icons--dim icon-400"><span class="icon--400"> Trends</span> </i>
-                <i class="fa-solid fa-star fa  icons--white icons--dim"><span class="icon--400"> Featured</span> </i>
-                <i class="fa-solid fa-stopwatch fa  icons--white icons--dim "><span class="icon--400"> Latest</span> </i>
-                <i class="fa-solid fa-file-contract fa  icons--white icons--back icons_border"><span class="icon--400"> Start Coding </span> </i>
-                <i class="fa-solid fa-user  fa icons--white icons_border icons--black" ><span class="icon--400"> Login</span> </i>
-                <i class="fa-solid fa-magnifying-glass fa icons--white icons_border icons--black"></i>
-            </div>
-            <div class="side_icons icons_mobile">
-                <i class="fa-solid fa-file-contract fa-2x  icons--white icons_border icons--back"></i>
-                <i class="fa-solid fa-user  fa-2x icons--white icons_border icons--black"></i>
-                <i class="fa-solid fa-magnifying-glass fa-2x icons--white icons_border icons--black"></i>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div class="main_head">
-            <img class="img_logo" src="images/main_head.png" alt="">
-            <h1>The place where your ideas come true</h1>
-            <h2>THE PLAYGROUND FOR DEVELOPERS WITH COOL STUFF</h2>
-            <img class="example" src="images/js-editor-example.png" alt="">
-            <h3>Explore and experiment with HTML, JavaScript and CSS visualise your ideas and get instant feedback.</h2>
-            <div class="block_1 ">
-                <div class="block_1--desktop">
-                    <h2 class="block--h2">HTML</h2>
-                        <p class="block_para">Write your html code fast and preview it in real time</p>
-                    <h2 class="block--h2">CSS</h2>
-                        <p class="block_para"> Powerful css editor with autocomplete module and many tools as Gradients generator, colors utils and more...</p>
-                    <h2 class="block--h2">JavaScript</h2> 
-                        <p class="block_para">Write cool js code quickly and get instant feedback in real time with our sandbox, you can run your code in the sandbox and get the result.</p> 
-                </div>
-                <img class="example block--eg" src="images/codes.png" alt=""> 
-            </div> 
-            <div class="block_2">
-                <img class="example block--margin" src="images/social_first.png" alt="">
-                <div class="block_2_para">
-                    <p class="block_para block-bold"> CODE TO IMAGE</p>
-                        <p class="block_para">Create and share beautiful images of your source code. Only select your code and share it. You can customize the image with your own text, background color, font color, font size, font family and more...</p>
-                </div>
-            </div> 
-            <div class="block_2"> 
-                <img class="example block--margin" src="images/snippets.png" alt="">
-                <div class="block_2_para">
-                    <p class="block_para block-bold"> SNIPPETS</p>
-                        <p class="block_para block--space">Create your own snippets and share them with the community. You can use them in your code in autocomplete module.</p>
-                </div>
-            </div>   
-            <div class="block_2">    
-                <img class="example block--margin" src="images/tutorials.png" alt="">
-                <div class="block_2_para">
-                    <p class="block_para block-bold">VIDEO ATTACHED TO YOUR CODE</p>
-                        <p class="block_para block--space">Add your video tutorial in your code and help to yours users to get a better experience.</p>
-                </div>
-            </div>  
-            <div class="block_2">
-                <img class="example block--margin" src="images/markdown.png" alt="">
-                <div class="block_2_para block--space">
-                    <p class="block_para block-bold">START WRINTING</p>
-                        <p class="block_para block--space">Document your code or write something for your users. Publishing content has never been easier.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="fo_main">
-        <div class="footer_main">
-            <div class="footer_block">
-                <img src="images/skriper.png" alt="">
-                <div class="footer--icons">
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-            </div>
-            <div class="footer_block">
-                <p class="second_color">LINKS OF INTEREST</p>
-                <ul class="list">
-                    <li class="list--li">FAQ</li>
-                    <li class="list--li">Twitter</li>
-                    <li class="list--li">Facebook</li>
-                    <li class="list--li">Youtube</li>
-                </ul>
-            </div>
-            <div class="footer_block">
-                <p>Copyright Skriper.dev © 2022</p>
-                <p class="contact">contact@skriper.dev</p>
-            </div>
-            
-        </div>
-    </footer>
-   
-    
-</body>
-</html>
+:root {
+  --colour--primary: #131313;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Typography */
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background: var(--colour--primary);
+  color: white;
+  margin: 0 0 0 0;
+}
+.footer_main {
+  font-size: 16px;
+}
+h1 {
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
+  max-width: 800px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 19px;
+  text-align: left;
+  font-weight: 400;
+  max-width: 900px;
+}
+.block_para {
+  font-size: 16px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.block-bold {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.block--h2 {
+  text-align: left;
+}
+
+.second_color {
+  color: #9b9b9b;
+  font-weight: 700;
+}
+
+.contact {
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* icons */
+
+.icons {
+  height: 30px;
+}
+
+.icons--white {
+  color: white;
+}
+.icons_border {
+  padding: 5px 15px;
+  border: 1px solid #424242;
+  margin: 0 10px;
+}
+
+.icons--back {
+  background: #458df5;
+  border: 0;
+}
+
+.icons--black {
+  background: black;
+}
+
+/* navigation-bar */
+.nav_fixed {
+  position: fixed;
+  width: 100%;
+  background: var(--colour--primary);
+}
+.nav_bar {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.side_icons {
+  display: flex;
+}
+
+.icons--white:hover {
+  color: rgba(255, 255, 255, 0.74);
+}
+.icons--back:hover {
+  background: #458ef5c7;
+}
+.icons_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .icons_mobile {
+    display: none;
+  }
+  .icons_desktop {
+    display: flex;
+  }
+  .icons--dim {
+    color: rgb(184, 184, 184);
+  }
+  .icons--dim:hover {
+    color: white;
+  }
+  .icon--400 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .fa {
+    font-size: 14px;
+  }
+  .icons--white {
+    padding: 10px 10px;
+  }
+}
+
+/* Center_Layout */
+.main_head {
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 25px 0 25px;
+  justify-content: center;
+}
+/* img */
+.example {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* blocks*/
+.block_1 {
+  text-align: left;
+}
+
+.block_1 {
+  display: flex;
+  flex-direction: column;
+}
+.block--eg {
+  margin: 10px 10px 10px 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .block_1 {
+    max-width: 900px;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+  .block--eg {
+    height: 223px;
+    width: 350px;
+    margin-top: 110px;
+  }
+  .block_2 {
+    display: flex;
+    max-width: 900px;
+    align-items: center;
+  }
+
+  .block_2_para {
+    padding-left: 15px;
+  }
+  .block--margin {
+    width: 250px;
+    padding-right: 20px;
+  }
+  .block_para {
+    margin-bottom: 5px;
+  }
+}
+
+/* footer */
+.fo_main {
+  background: #1f1f1f;
+  width: 100%;
+}
+.footer_main {
+  padding: 20px 0 40px 0;
+}
+.footer--icons {
+  display: none;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_block {
+  margin: 0 45px;
+}
+
+.list--li {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .fo_main {
+    background: #1f1f1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .footer_main {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 20px 0 40px 0;
+  }
+  .footer--icons {
+    display: block;
+  }
+  .fa-brands {
+    margin: 0 5px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+}
