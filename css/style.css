@@ -189,12 +189,13 @@ h3 {
   align-items: center;
   flex-direction: column;
 }
-.block--margin {
-  max-width: 250px;
-}
+
 .example {
   width: 100%;
   max-width: 350px;
+}
+.block--margin {
+  max-width: 250px;
 }
 
 @media screen and (min-width: 780px) {
