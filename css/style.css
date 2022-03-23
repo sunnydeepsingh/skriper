@@ -114,7 +114,7 @@ h3 {
   background: var(--color--primary);
 }
 .nav_bar {
-  margin-top: 5px;
+  padding-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
