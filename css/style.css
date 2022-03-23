@@ -112,6 +112,7 @@ h3 {
   position: fixed;
   width: 100%;
   background: var(--color--primary);
+  padding-bottom: 5px;
 }
 .nav_bar {
   padding-top: 5px;
